@@ -1,0 +1,108 @@
+.secWrapper{
+    padding: 2rem 0;
+    background-color: #222224;
+}
+.heading{
+    text-align: center;
+    color: #e40000;
+}
+.cardWrapper >*{
+    margin-bottom: 1rem;
+}
+
+.dayCard {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    /* border: none; */
+    height: fit-content;
+    margin-bottom: 1rem !important;
+    /* padding-top: 1rem; */
+}
+.dayCard:hover{
+    background-color: gray;
+    transform: scale(0.9);
+}
+.monthCard:hover{
+    background-color: gray;
+    transform: scale(0.9);
+}
+.monthCard{
+    background-color: white;
+    color: black;
+    
+}
+
+.dayCardBtn{
+    width: 100%;
+    color: black;
+    background-color: white;
+    border-radius: 0;
+    margin-top: 2rem;
+}
+.monthCardBtn{
+    composes : dayCardBtn;
+    background-color: #00b000;
+    color: white
+    ;
+}
+.monthCardTick{
+    color: #00b000 ;
+}
+
+.rightSec{
+    color: #ffffff;
+    padding: 2rem;
+    /* background-color: red; */
+}
+
+@media screen and (min-width: 1024px)  { 
+    
+  
+    .cardWrapper{
+        display: flex;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .secWrapper{
+        padding: 4rem 0;
+    }
+   
+    .heading{
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    .cardWrapper >*{
+        margin-bottom: 0rem;
+    }
+   
+    .mainWrapper{
+        display: flex;
+        padding: 0 5rem;
+    }
+    
+    .leftSec{
+        flex: 1.5;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .rightSec {
+        flex: 1;
+    }
+    
+    .dayCard{
+        width: fit-content !important;
+        padding: 2rem 4rem !important;
+        margin: 0 !important;
+        margin-right: 2rem !important;
+        /* margin-top: 3rem !important; */
+    }
+    .monthCard{
+        composes : dayCard ;
+        color: black;
+    }
+   
+
+
+}

@@ -1,0 +1,56 @@
+.feesCard{
+    border: 1px solid ;
+    width: 60%;
+    /* width: fit-content; */
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    border: none;
+    /* background-color: red; */
+
+}
+.passType{
+    font-weight: 900;
+    font-family: sans-serif;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.pricing{
+    composes : passType ;
+    color: #00b000;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.wrapper>*{
+    margin-bottom: 1rem;
+}
+
+.timeSpan{
+    composes : passType ;
+    font-family: cursive;
+    margin-bottom: 3rem;
+}
+
+.tick{
+    margin-right: 1rem;
+}
+
+
+
+
+
+@media screen and (min-width: 1024px)  {
+
+ .feesCard{
+    font-size: 1.3rem;
+ }
+
+
+
+}

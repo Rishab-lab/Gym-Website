@@ -1,0 +1,39 @@
+.footer{
+    padding: 2rem;
+    background-color: #270514;
+}
+.icon{
+    font-size: 2rem;
+    color : white
+}
+
+.wrapper{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.txt{
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 1024px)  { 
+    .icon{
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+    .wrapper{
+        display: flex;
+        width: fit-content;
+    }
+    .footer{
+        padding: 5rem;
+    }
+    .icon:hover{
+        transform: scale(1.5);
+        transition: all 1s;
+    }
+
+}

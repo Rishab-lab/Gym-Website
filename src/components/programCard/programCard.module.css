@@ -1,0 +1,22 @@
+.wrapper{
+    /* border: 1px solid red; */
+    composes : flexTwo from '../../../src/commonStyle.module.css';
+    width: 80%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 1rem;
+
+}
+.imageWrapper{
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.heading{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.cardInfo{
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+.wrapper{
+    padding: 2rem 1rem;
+    /* border: 1px solid red; */
+
+}
+.listItem::before{
+        content: "\2022";
+        color: red;
+        font-weight: bold;
+        position: absolute;
+        /* top: 1.9rem; */
+        top: -0.3rem;
+        left: -1rem;
+        width: 4rem;
+        height: 4rem;
+        /* display: inline-block;  */
+        font-size: 1.5rem;
+        /* width: 1em; */
+        /* margin-left: -1em; */
+
+}
+.listItem{
+    position: relative;
+}
+.list{
+    list-style: none;
+}
+.benifit{
+    font-weight: 900;
+}
+.heading{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.rightSec{
+    padding: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 1024px)  {
+    .wrapper{
+        padding: 3rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .benifit{
+        font-size: 1.3rem;
+    }
+    .explanation{
+        padding-right: 10rem;
+        font-size: 1.3rem;
+    }
+    .listItem::before{
+        content: "\2022";
+        /* color: red; */
+        /* font-weight: bold; */
+        /* position: absolute; */
+        /* top: 2.5rem; */
+        left: -2rem;
+        /* width: 4rem; */
+        /* height: 4rem; */
+        /* display: inline-block;  */
+        font-size: 2rem;
+        /* width: 1em; */
+        /* margin-left: -1em; */
+
+}
+    .rightSec{
+        height: 20rem;
+    }
+
+
+    
+}
