@@ -7,6 +7,7 @@ import { Link as RouterLink } from "react-router-dom";
 import {Link as ScrollLink} from 'react-scroll';
 import Button from '../button/button';
 import { useNavigate } from 'react-router-dom';
+import AppDrawer from './AppDrawer';
 
 
 export default function Header({isButtonVisible = true}) {
@@ -31,27 +32,7 @@ export default function Header({isButtonVisible = true}) {
                     onClick={() => setIsShowingMenu(!isShowingMenu)}
                 />
             </div>
-
-            <ul className={styles.list}>
-                
-                <li className={styles.listItem}>
-                
-
-                    <RouterLink to='/aboutPage' className={styles.link}>
-                           AboutUs
-                    </RouterLink>
-                    <ScrollLink to='pro' className={styles.link} spy={true} smooth={true} duration={100}>
-                        Program
-                    </ScrollLink>
-                    <ScrollLink to='why' className={styles.link} spy={true} smooth={true} duration={100}>
-                        Training
-                    </ScrollLink>
-                    <ScrollLink to='fees' className={styles.link} spy={true} smooth={true} duration={100}>
-                        Pricing
-                    </ScrollLink>
-                </li>
-
-            </ul>
+            <AppDrawer/>
         </div>
         )
     }
@@ -65,6 +46,7 @@ export default function Header({isButtonVisible = true}) {
                         <img
                             src={logo}
                             className={styles.logo}
+                            alt='logo'
                         >
                         </img>
                     </picture>
@@ -106,3 +88,5 @@ export default function Header({isButtonVisible = true}) {
 
     )
 }
+
+

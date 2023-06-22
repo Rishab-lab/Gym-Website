@@ -1,6 +1,6 @@
 .footer{
     padding: 2rem;
-    background-color: #270514;
+    background-color: #000000;
 }
 .icon{
     font-size: 2rem;
@@ -17,6 +17,38 @@
     justify-content: space-between;
     text-decoration: none;
 }
+
+
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .footer {
+    position: relative;
+  }
+  
+  .copyRight {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  
 
 
 @media screen and (min-width: 1024px)  { 
@@ -37,3 +69,20 @@
     }
 
 }
+
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  

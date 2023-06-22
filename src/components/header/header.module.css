@@ -21,11 +21,11 @@
     margin-right: 2rem;
 }
 .menuOption{
-    background-color:  white;
+    background-color:rgb(236, 152, 152);
     position: fixed;
     top:0;
     bottom:0;
-    left: 0;
+    left: 70%;
     right: 0;
     z-index: 110;
 }
@@ -45,6 +45,7 @@
     text-align: start;
     padding: 1rem;
     padding-left: 3rem;
+    display: table-caption;
 }
 .link{
     text-decoration: none;
@@ -73,7 +74,6 @@
         font-weight: 700;
     }
     .navOptions:hover{
-       
         transform: scale(1.25);
         transition: all .2s ease-in-out;
     }
